@@ -1,0 +1,4 @@
+body {width:100vw;height:100vh;}
+body > * {width:100%;}
+nav {background: tomato;height:5%;}
+main {height:100%;background:lightgray;}
