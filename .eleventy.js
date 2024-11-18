@@ -1,5 +1,7 @@
 const fuente = 'src';
 
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+
 export default async function(eleventyConfig) {
 	/*  return {
     dir:
@@ -14,5 +16,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('node_modules/katex');
 
   eleventyConfig.addPassthroughCopy('src');
+  //PLUGIN HtmlBASE
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 }
 
