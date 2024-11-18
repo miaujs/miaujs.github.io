@@ -1,0 +1,30 @@
+
+
+html {font-family:arial;height:100%;}
+body {width:100vw;height:100%; background-color: #D9AFD9;background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);}
+
+a {color:white;}
+a:visited {color:none;}
+
+.botonIU {background:none;border:none;padding:1vw;font-size:2vw;color:white;}
+
+#landingPage {height:100%;width:100%;}
+#frontNav {height:5%;color:white;display:flex; flex-flow:no-wrap; justify-content: space-between;background: transparent;}
+#frontNav > div {font-size:2vw;padding: 1vw;}
+#frontMain {height:90%;}
+#frontFooter {height:5%;}
+
+#sobreMi {}
+#sobreMi > article {}
+#blog {}
+#blog > article {}
+
+#menu {color:white;display:none;position:fixed;top:0;width:100%;height:100%;z-index:7777;}
+#contenedorMenu {display:flex;flex-flow:column;width:100%;height:100%;}
+
+#contenedorMenu nav {height:5%;}
+#contenedorMenu nav > button {float:right;}
+#contenedorMenu ul {height:65%;text-decoration:underline solid;text-align:center;list-style:none;font-size:4vw;color:white;}
+#contenedorMenu footer {height:10%;display:flex; flex-flow:column; align-items:center;}
+#contenedorMenu footer > div {height:50%; display:flex; justify-content:center;}
+#contenedorMenu img {width:auto;height:100%;padding-right:2vw;}

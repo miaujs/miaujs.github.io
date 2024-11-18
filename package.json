@@ -1,0 +1,25 @@
+{
+  "name": "11tyblog",
+  "version": "1.0.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "install": "npm install @11ty/eleventy",
+    "11tyVersion": "echo \"la version instalada es: $(npx @11ty/eleventy --version)\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --serve --port=8080 --watch --output='docs'",
+    "clean": "rm -rf docs",
+    "deploy": "npx @11ty/eleventy --pathprefix=/",
+    "deploy_sub": "npx @11ty/eleventy --pathprefix=/docs/"
+  },
+  "keywords": [],
+  "author": "miaujs",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0", 
+    "gh-pages": "^6.2.0",
+    "katex": "^0.16.11",
+    "normalize.css": "^8.0.1"
+  }
+}
