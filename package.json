@@ -9,7 +9,7 @@
     "start": "npx @11ty/eleventy --serve --port=8080 --watch --output='docs'",
     "clean": "rm -rf docs",
     "deploy": "npx @11ty/eleventy --pathprefix=/",
-    "deploy_sub": "npx @11ty/eleventy --pathprefix=/docs/"
+    "deploy_sub": "npx @11ty/eleventy --pathprefix=/miaujs.github.io/ --output='docs'"
   },
   "keywords": [],
   "author": "miaujs",
