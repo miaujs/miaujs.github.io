@@ -1,21 +1,18 @@
-const fuente = 'src';
+const codigo = 'fuente';
 
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default async function(eleventyConfig) {
-	/*  return {
-    dir:
-      input:"11tyCode",
-      output:"web",
-     } */
+  eleventyConfig.setInputDirectory("fuente");
+  eleventyConfig.setOutputDirectory("docs");
   // Configure Eleventy
-  eleventyConfig.addPassthroughCopy(`${fuente}/css/estilos.css`);
+  eleventyConfig.addPassthroughCopy("fuente/src/css/estilos.css");
   //NORMALIZE.CSS
-  eleventyConfig.addPassthroughCopy('node_modules/normalize.css/normalize.css');
+  eleventyConfig.addPassthroughCopy("node_modules/normalize.css/normalize.css");
   //KATEX
-  eleventyConfig.addPassthroughCopy('node_modules/katex');
+  eleventyConfig.addPassthroughCopy("node_modules/katex");
 
-  eleventyConfig.addPassthroughCopy('src');
+  eleventyConfig.addPassthroughCopy("fuente/src");
   //PLUGIN HtmlBASE
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 }

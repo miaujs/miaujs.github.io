@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx @11ty/eleventy --serve --port=8080 --watch --output='docs'",
     "clean": "rm -rf docs",
-    "deploy": "npx @11ty/eleventy --pathprefix=/",
-    "deploy_sub": "npx @11ty/eleventy --output='docs' --pathprefix=/miaujs.github.io/"
+    "deploy": "npx @11ty/eleventy --output='docs'",
+    "deploy_sub": "npx @11ty/eleventy --pathprefix=miaujs.github.io"
   },
   "keywords": [],
   "author": "miaujs",
